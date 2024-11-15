@@ -1,0 +1,30 @@
+pluginManagement {
+    repositories {
+        google {
+            content {
+                // Incluye grupos relevantes de Google y Android
+                includeGroupByRegex("com\\.android.*")
+                includeGroupByRegex("com\\.google.*")
+                includeGroupByRegex("androidx.*")
+            }
+        }
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+
+dependencyResolutionManagement {
+    // Configura el modo para evitar repositorios definidos en los archivos build.gradle
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+// Nombre del proyecto raíz
+rootProject.name = "eva3 aplicaciones moviles"
+
+// Incluye el módulo principal
+include ':app'
+

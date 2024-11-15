@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Nombre del ítem -->
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre del ítem"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <!-- Cantidad del ítem -->
+    <TextView
+        android:id="@+id/tvQuantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cantidad: 0" />
+
+    <!-- Fecha de vencimiento -->
+    <TextView
+        android:id="@+id/tvExpirationDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fecha de vencimiento: 01/01/2024" />
+
+    <!-- Botón de editar -->
+    <Button
+        android:id="@+id/btnEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Editar"
+        android:layout_marginTop="8dp" />
+
+    <!-- Botón de eliminar -->
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Eliminar"
+        android:layout_marginTop="8dp" />
+</LinearLayout>

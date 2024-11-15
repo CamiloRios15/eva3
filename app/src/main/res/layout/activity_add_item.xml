@@ -1,0 +1,53 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre del ítem"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/etQuantity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Cantidad"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/etExpirationDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Fecha de vencimiento (YYYY-MM-DD)"
+            android:inputType="date" />
+
+        <EditText
+            android:id="@+id/etPresentation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Presentación"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/etDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Descripción"
+            android:inputType="text" />
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Guardar" />
+
+    </LinearLayout>
+</ScrollView>

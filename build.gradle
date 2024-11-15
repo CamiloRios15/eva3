@@ -1,0 +1,22 @@
+// Archivo build.gradle (a nivel de proyecto)
+// Archivo de configuración principal donde puedes agregar opciones comunes a todos los subproyectos/módulos.
+
+// Define el bloque buildscript para configurar dependencias de construcción
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        // Dependencia para los servicios de Google
+        classpath 'com.google.gms:google-services:4.4.2'
+    }
+}
+
+// Define los plugins utilizados
+plugins {
+    alias(libs.plugins.android.application) apply false
+    id 'com.google.gms.google-services' version '4.4.2' apply false
+}
+
+// Eliminado el bloque allprojects { repositories } ya que no es necesario con settings.gradle
